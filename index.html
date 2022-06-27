@@ -69,11 +69,13 @@
       
       if (liff.getContext().type !== "none") {
         alert("Message sent");
-        await liff.sendMessages({
+        await liff.sendMessages([
+          {
           "type" : "sticker",
           "stickerId": 1,
           "packageId" : 1
-        })
+        }
+        ])
         
       }else{
       alert("Message not sent");
