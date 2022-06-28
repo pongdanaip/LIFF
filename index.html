@@ -51,6 +51,8 @@
     }
 
     function logOut() {
+      liff.logOut()
+      window.location.reload()
     }
 
     function closed() {
@@ -117,7 +119,7 @@
     async function main() {
       //alert("LINE Developers x Skooldio")
       await liff.init({ liffId: "1657255839-RA9AE60N" })
-      document.getElementById("isLoggedIn").append(lift.isLogin())
+      document.getElementById("isLoggedIn").append(liff.isLogin())
       if(liff.isLogin()){
        getEnvironment()
        getUserProfile()
